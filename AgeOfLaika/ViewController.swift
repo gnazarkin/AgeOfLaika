@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         dogYearsLabel.hidden = false
         let yearsFromTextField = humanYearsTextField.text.toInt()!
         dogYearsLabel.text = "\(yearsFromTextField * 7)" + " in dog years"
+        humanYearsTextField.resignFirstResponder()
     }
 
 }
